@@ -18,7 +18,7 @@ function LoginPage() {
     const Login = async (username, password) => {
         try {
             const response = await axios.post(
-                'http://localhost:8080/login',
+                '15.164.94.202:8080/login',
                 { account: username, password },
                 { withCredentials: true }
             );

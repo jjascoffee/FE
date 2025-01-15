@@ -10,6 +10,8 @@ export const getUser = async () => {
                 access: access
             }
         })
+        console.log(result.data);
+        
         return result.data;
     }
     catch (error) {

@@ -5,7 +5,7 @@ export const isStaff = async () => {
     const access = localStorage.getItem('access')
     try {
 
-        const result = await axios.get('https://54.180.31.181:8080/staff', {
+        const result = await axios.get('54.180.31.181:8080/staff', {
             headers: {
                 access: access
             }

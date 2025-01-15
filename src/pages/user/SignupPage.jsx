@@ -34,7 +34,7 @@ function SignupPage() {
     const checkAccount = async () => {
         if (username) {
             try {
-                const response = await axios.get('https://15.164.94.202:8080/join/account', {
+                const response = await axios.get('15.164.94.202:8080/join/account', {
                     params: {
                         account: username,
                     }
@@ -60,7 +60,7 @@ function SignupPage() {
     const checkMmid = async () => {
         if (mmid) {
             try {
-                const response = await axios.get('https://15.164.94.202:8080/join/mmid', {
+                const response = await axios.get('15.164.94.202:8080/join/mmid', {
                     params: {
                         mmid: mmid,
                     }

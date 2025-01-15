@@ -3,7 +3,7 @@ import axios from "axios";
 // 회원가입 요청 api
 export const signUp = (username, password, name, mmid, fund, bank, navigate) => {
     // 회원가입 요청을 POST 방식으로 보내기
-    axios.post('http://54.180.31.181:8080/join', {
+    axios.post('54.180.31.181:8080/join', {
         account: username,
         password,
         name,
